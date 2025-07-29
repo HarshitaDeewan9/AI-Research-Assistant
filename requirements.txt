@@ -1,0 +1,13 @@
+langchain
+langgraph
+groq
+arxiv
+requests
+streamlit
+PyPDF2
+python-dotenv
+tiktoken
+langchain_groq
+beautifulsoup4
+matplotlib
+wordcloud
