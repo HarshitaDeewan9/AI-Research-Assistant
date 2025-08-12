@@ -24,5 +24,7 @@ def run_langgraph_agent(text="", query=""):
     builder.add_edge("QA", END)
 
     graph = builder.compile()
+    graph.get_graph().draw_mermaid_png(output_file_path="graph.png")
+    print(graph.get_graph().draw_mermaid())
     state = graph.invoke({"text": text, "query": query})
     return state
