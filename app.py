@@ -115,7 +115,6 @@ if papers:
             st.info(f"🔗 Similarity Score for **{selected_section}**: **{similarity}%**")
     state = run_langgraph_agent()
     st.image("assets/langgraph_flow.png", caption="LangGraph Workflow", use_container_width=True)
-
 else:
     st.info("Upload or search for papers to get summaries and papers comparison.")
 
