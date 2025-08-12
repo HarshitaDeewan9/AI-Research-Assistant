@@ -68,7 +68,7 @@ if papers:
         for sec, summary in summaries.items():
             st.markdown(f"**{sec}**: {summary}")
 
-        # 🔍 Visual Insights (WordCloud + Frequency Chart)
+        # Visual Insights (WordCloud + Frequency Chart)
         st.markdown("### 📊 Visual Insights")
 
         combined_text = " ".join(sections.values())
@@ -115,7 +115,7 @@ if papers:
             st.info(f"🔗 Similarity Score for **{selected_section}**: **{similarity}%**")
     else:
         st.info("Please upload or search for 2 or more papers to get papers comparison.")
-    st.subheader("Langgraph Pipeline Visualisation")
+    st.subheader("🛠️ Langgraph Pipeline Visualisation")
     state = run_langgraph_agent()
     st.image("assets/langgraph_flow.png", caption="LangGraph Workflow")
 else:
