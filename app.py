@@ -113,6 +113,8 @@ if papers:
             text2 = comparison_data[1]["sections"].get(selected_section, "")
             similarity = calculate_similarity(text1, text2)
             st.info(f"🔗 Similarity Score for **{selected_section}**: **{similarity}%**")
+    else:
+        st.info("Please upload or search for 2 or more papers to get papers comparison.")
     st.subheader("Langgraph Pipeline Visualisation")
     state = run_langgraph_agent()
     st.image("assets/langgraph_flow.png", caption="LangGraph Workflow")
