@@ -113,6 +113,7 @@ if papers:
             text2 = comparison_data[1]["sections"].get(selected_section, "")
             similarity = calculate_similarity(text1, text2)
             st.info(f"🔗 Similarity Score for **{selected_section}**: **{similarity}%**")
+    run_langgraph_agent()
 
 else:
     st.info("Upload or search for papers to get summaries and papers comparison.")
